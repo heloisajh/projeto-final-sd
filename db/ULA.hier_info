@@ -1,0 +1,943 @@
+|ULA
+A[0] => LessThan0.IN32
+A[0] => somadornbits:somador.a[0]
+A[0] => subtratornbits:subtrator.sub1[0]
+A[1] => LessThan0.IN31
+A[1] => somadornbits:somador.a[1]
+A[1] => subtratornbits:subtrator.sub1[1]
+A[2] => LessThan0.IN30
+A[2] => somadornbits:somador.a[2]
+A[2] => subtratornbits:subtrator.sub1[2]
+A[3] => LessThan0.IN29
+A[3] => somadornbits:somador.a[3]
+A[3] => subtratornbits:subtrator.sub1[3]
+A[4] => LessThan0.IN28
+A[4] => somadornbits:somador.a[4]
+A[4] => subtratornbits:subtrator.sub1[4]
+A[5] => LessThan0.IN27
+A[5] => somadornbits:somador.a[5]
+A[5] => subtratornbits:subtrator.sub1[5]
+A[6] => LessThan0.IN26
+A[6] => somadornbits:somador.a[6]
+A[6] => subtratornbits:subtrator.sub1[6]
+A[7] => LessThan0.IN25
+A[7] => somadornbits:somador.a[7]
+A[7] => subtratornbits:subtrator.sub1[7]
+A[8] => LessThan0.IN24
+A[8] => somadornbits:somador.a[8]
+A[8] => subtratornbits:subtrator.sub1[8]
+A[9] => LessThan0.IN23
+A[9] => somadornbits:somador.a[9]
+A[9] => subtratornbits:subtrator.sub1[9]
+A[10] => LessThan0.IN22
+A[10] => somadornbits:somador.a[10]
+A[10] => subtratornbits:subtrator.sub1[10]
+A[11] => LessThan0.IN21
+A[11] => somadornbits:somador.a[11]
+A[11] => subtratornbits:subtrator.sub1[11]
+A[12] => LessThan0.IN20
+A[12] => somadornbits:somador.a[12]
+A[12] => subtratornbits:subtrator.sub1[12]
+A[13] => LessThan0.IN19
+A[13] => somadornbits:somador.a[13]
+A[13] => subtratornbits:subtrator.sub1[13]
+A[14] => LessThan0.IN18
+A[14] => somadornbits:somador.a[14]
+A[14] => subtratornbits:subtrator.sub1[14]
+A[15] => LessThan0.IN17
+A[15] => somadornbits:somador.a[15]
+A[15] => subtratornbits:subtrator.sub1[15]
+A[16] => LessThan0.IN16
+A[16] => somadornbits:somador.a[16]
+A[16] => subtratornbits:subtrator.sub1[16]
+A[17] => LessThan0.IN15
+A[17] => somadornbits:somador.a[17]
+A[17] => subtratornbits:subtrator.sub1[17]
+A[18] => LessThan0.IN14
+A[18] => somadornbits:somador.a[18]
+A[18] => subtratornbits:subtrator.sub1[18]
+A[19] => LessThan0.IN13
+A[19] => somadornbits:somador.a[19]
+A[19] => subtratornbits:subtrator.sub1[19]
+A[20] => LessThan0.IN12
+A[20] => somadornbits:somador.a[20]
+A[20] => subtratornbits:subtrator.sub1[20]
+A[21] => LessThan0.IN11
+A[21] => somadornbits:somador.a[21]
+A[21] => subtratornbits:subtrator.sub1[21]
+A[22] => LessThan0.IN10
+A[22] => somadornbits:somador.a[22]
+A[22] => subtratornbits:subtrator.sub1[22]
+A[23] => LessThan0.IN9
+A[23] => somadornbits:somador.a[23]
+A[23] => subtratornbits:subtrator.sub1[23]
+A[24] => LessThan0.IN8
+A[24] => somadornbits:somador.a[24]
+A[24] => subtratornbits:subtrator.sub1[24]
+A[25] => LessThan0.IN7
+A[25] => somadornbits:somador.a[25]
+A[25] => subtratornbits:subtrator.sub1[25]
+A[26] => LessThan0.IN6
+A[26] => somadornbits:somador.a[26]
+A[26] => subtratornbits:subtrator.sub1[26]
+A[27] => LessThan0.IN5
+A[27] => somadornbits:somador.a[27]
+A[27] => subtratornbits:subtrator.sub1[27]
+A[28] => LessThan0.IN4
+A[28] => somadornbits:somador.a[28]
+A[28] => subtratornbits:subtrator.sub1[28]
+A[29] => LessThan0.IN3
+A[29] => somadornbits:somador.a[29]
+A[29] => subtratornbits:subtrator.sub1[29]
+A[30] => LessThan0.IN2
+A[30] => somadornbits:somador.a[30]
+A[30] => subtratornbits:subtrator.sub1[30]
+A[31] => LessThan0.IN1
+A[31] => somadornbits:somador.a[31]
+A[31] => subtratornbits:subtrator.sub1[31]
+B[0] => LessThan0.IN64
+B[0] => somadornbits:somador.b[0]
+B[0] => subtratornbits:subtrator.sub2[0]
+B[1] => LessThan0.IN63
+B[1] => somadornbits:somador.b[1]
+B[1] => subtratornbits:subtrator.sub2[1]
+B[2] => LessThan0.IN62
+B[2] => somadornbits:somador.b[2]
+B[2] => subtratornbits:subtrator.sub2[2]
+B[3] => LessThan0.IN61
+B[3] => somadornbits:somador.b[3]
+B[3] => subtratornbits:subtrator.sub2[3]
+B[4] => LessThan0.IN60
+B[4] => somadornbits:somador.b[4]
+B[4] => subtratornbits:subtrator.sub2[4]
+B[5] => LessThan0.IN59
+B[5] => somadornbits:somador.b[5]
+B[5] => subtratornbits:subtrator.sub2[5]
+B[6] => LessThan0.IN58
+B[6] => somadornbits:somador.b[6]
+B[6] => subtratornbits:subtrator.sub2[6]
+B[7] => LessThan0.IN57
+B[7] => somadornbits:somador.b[7]
+B[7] => subtratornbits:subtrator.sub2[7]
+B[8] => LessThan0.IN56
+B[8] => somadornbits:somador.b[8]
+B[8] => subtratornbits:subtrator.sub2[8]
+B[9] => LessThan0.IN55
+B[9] => somadornbits:somador.b[9]
+B[9] => subtratornbits:subtrator.sub2[9]
+B[10] => LessThan0.IN54
+B[10] => somadornbits:somador.b[10]
+B[10] => subtratornbits:subtrator.sub2[10]
+B[11] => LessThan0.IN53
+B[11] => somadornbits:somador.b[11]
+B[11] => subtratornbits:subtrator.sub2[11]
+B[12] => LessThan0.IN52
+B[12] => somadornbits:somador.b[12]
+B[12] => subtratornbits:subtrator.sub2[12]
+B[13] => LessThan0.IN51
+B[13] => somadornbits:somador.b[13]
+B[13] => subtratornbits:subtrator.sub2[13]
+B[14] => LessThan0.IN50
+B[14] => somadornbits:somador.b[14]
+B[14] => subtratornbits:subtrator.sub2[14]
+B[15] => LessThan0.IN49
+B[15] => somadornbits:somador.b[15]
+B[15] => subtratornbits:subtrator.sub2[15]
+B[16] => LessThan0.IN48
+B[16] => somadornbits:somador.b[16]
+B[16] => subtratornbits:subtrator.sub2[16]
+B[17] => LessThan0.IN47
+B[17] => somadornbits:somador.b[17]
+B[17] => subtratornbits:subtrator.sub2[17]
+B[18] => LessThan0.IN46
+B[18] => somadornbits:somador.b[18]
+B[18] => subtratornbits:subtrator.sub2[18]
+B[19] => LessThan0.IN45
+B[19] => somadornbits:somador.b[19]
+B[19] => subtratornbits:subtrator.sub2[19]
+B[20] => LessThan0.IN44
+B[20] => somadornbits:somador.b[20]
+B[20] => subtratornbits:subtrator.sub2[20]
+B[21] => LessThan0.IN43
+B[21] => somadornbits:somador.b[21]
+B[21] => subtratornbits:subtrator.sub2[21]
+B[22] => LessThan0.IN42
+B[22] => somadornbits:somador.b[22]
+B[22] => subtratornbits:subtrator.sub2[22]
+B[23] => LessThan0.IN41
+B[23] => somadornbits:somador.b[23]
+B[23] => subtratornbits:subtrator.sub2[23]
+B[24] => LessThan0.IN40
+B[24] => somadornbits:somador.b[24]
+B[24] => subtratornbits:subtrator.sub2[24]
+B[25] => LessThan0.IN39
+B[25] => somadornbits:somador.b[25]
+B[25] => subtratornbits:subtrator.sub2[25]
+B[26] => LessThan0.IN38
+B[26] => somadornbits:somador.b[26]
+B[26] => subtratornbits:subtrator.sub2[26]
+B[27] => LessThan0.IN37
+B[27] => somadornbits:somador.b[27]
+B[27] => subtratornbits:subtrator.sub2[27]
+B[28] => LessThan0.IN36
+B[28] => somadornbits:somador.b[28]
+B[28] => subtratornbits:subtrator.sub2[28]
+B[29] => LessThan0.IN35
+B[29] => somadornbits:somador.b[29]
+B[29] => subtratornbits:subtrator.sub2[29]
+B[30] => LessThan0.IN34
+B[30] => somadornbits:somador.b[30]
+B[30] => subtratornbits:subtrator.sub2[30]
+B[31] => LessThan0.IN33
+B[31] => somadornbits:somador.b[31]
+B[31] => subtratornbits:subtrator.sub2[31]
+C[0] => Equal0.IN5
+C[0] => Equal1.IN5
+C[0] => Equal2.IN5
+C[0] => Equal3.IN5
+C[0] => Equal4.IN5
+C[1] => Equal0.IN4
+C[1] => Equal1.IN4
+C[1] => Equal2.IN4
+C[1] => Equal3.IN4
+C[1] => Equal4.IN4
+C[2] => Equal0.IN3
+C[2] => Equal1.IN3
+C[2] => Equal2.IN3
+C[2] => Equal3.IN3
+C[2] => Equal4.IN3
+logico_um => porta_and:porta_andi.A
+logico_um => porta_or:porta_ori.A
+logico_dois => porta_and:porta_andi.B
+logico_dois => porta_or:porta_ori.B
+Zero <= comb.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[0] <= saida_som[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[1] <= saida_som[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[2] <= saida_som[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[3] <= saida_som[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[4] <= saida_som[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[5] <= saida_som[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[6] <= saida_som[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[7] <= saida_som[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[8] <= saida_som[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[9] <= saida_som[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[10] <= saida_som[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[11] <= saida_som[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[12] <= saida_som[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[13] <= saida_som[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[14] <= saida_som[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[15] <= saida_som[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[16] <= saida_som[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[17] <= saida_som[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[18] <= saida_som[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[19] <= saida_som[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[20] <= saida_som[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[21] <= saida_som[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[22] <= saida_som[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[23] <= saida_som[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[24] <= saida_som[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[25] <= saida_som[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[26] <= saida_som[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[27] <= saida_som[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[28] <= saida_som[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[29] <= saida_som[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[30] <= saida_som[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[31] <= saida_som[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_som[32] <= saida_som[32]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[0] <= saida_sub[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[1] <= saida_sub[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[2] <= saida_sub[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[3] <= saida_sub[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[4] <= saida_sub[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[5] <= saida_sub[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[6] <= saida_sub[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[7] <= saida_sub[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[8] <= saida_sub[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[9] <= saida_sub[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[10] <= saida_sub[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[11] <= saida_sub[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[12] <= saida_sub[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[13] <= saida_sub[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[14] <= saida_sub[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[15] <= saida_sub[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[16] <= saida_sub[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[17] <= saida_sub[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[18] <= saida_sub[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[19] <= saida_sub[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[20] <= saida_sub[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[21] <= saida_sub[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[22] <= saida_sub[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[23] <= saida_sub[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[24] <= saida_sub[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[25] <= saida_sub[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[26] <= saida_sub[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[27] <= saida_sub[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[28] <= saida_sub[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[29] <= saida_sub[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[30] <= saida_sub[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_sub[31] <= saida_sub[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_and <= saida_and$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_or <= saida_or$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_solt <= saida_solt$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador
+cin => Somador1bit:scs:0:sc_internal:sc.cin
+a[0] => Somador1bit:scs:0:sc_internal:sc.a
+a[1] => Somador1bit:scs:1:sc_internal:sc.a
+a[2] => Somador1bit:scs:2:sc_internal:sc.a
+a[3] => Somador1bit:scs:3:sc_internal:sc.a
+a[4] => Somador1bit:scs:4:sc_internal:sc.a
+a[5] => Somador1bit:scs:5:sc_internal:sc.a
+a[6] => Somador1bit:scs:6:sc_internal:sc.a
+a[7] => Somador1bit:scs:7:sc_internal:sc.a
+a[8] => Somador1bit:scs:8:sc_internal:sc.a
+a[9] => Somador1bit:scs:9:sc_internal:sc.a
+a[10] => Somador1bit:scs:10:sc_internal:sc.a
+a[11] => Somador1bit:scs:11:sc_internal:sc.a
+a[12] => Somador1bit:scs:12:sc_internal:sc.a
+a[13] => Somador1bit:scs:13:sc_internal:sc.a
+a[14] => Somador1bit:scs:14:sc_internal:sc.a
+a[15] => Somador1bit:scs:15:sc_internal:sc.a
+a[16] => Somador1bit:scs:16:sc_internal:sc.a
+a[17] => Somador1bit:scs:17:sc_internal:sc.a
+a[18] => Somador1bit:scs:18:sc_internal:sc.a
+a[19] => Somador1bit:scs:19:sc_internal:sc.a
+a[20] => Somador1bit:scs:20:sc_internal:sc.a
+a[21] => Somador1bit:scs:21:sc_internal:sc.a
+a[22] => Somador1bit:scs:22:sc_internal:sc.a
+a[23] => Somador1bit:scs:23:sc_internal:sc.a
+a[24] => Somador1bit:scs:24:sc_internal:sc.a
+a[25] => Somador1bit:scs:25:sc_internal:sc.a
+a[26] => Somador1bit:scs:26:sc_internal:sc.a
+a[27] => Somador1bit:scs:27:sc_internal:sc.a
+a[28] => Somador1bit:scs:28:sc_internal:sc.a
+a[29] => Somador1bit:scs:29:sc_internal:sc.a
+a[30] => Somador1bit:scs:30:sc_internal:sc.a
+a[31] => Somador1bit:scs:31:sc_internal:sc.a
+b[0] => Somador1bit:scs:0:sc_internal:sc.b
+b[1] => Somador1bit:scs:1:sc_internal:sc.b
+b[2] => Somador1bit:scs:2:sc_internal:sc.b
+b[3] => Somador1bit:scs:3:sc_internal:sc.b
+b[4] => Somador1bit:scs:4:sc_internal:sc.b
+b[5] => Somador1bit:scs:5:sc_internal:sc.b
+b[6] => Somador1bit:scs:6:sc_internal:sc.b
+b[7] => Somador1bit:scs:7:sc_internal:sc.b
+b[8] => Somador1bit:scs:8:sc_internal:sc.b
+b[9] => Somador1bit:scs:9:sc_internal:sc.b
+b[10] => Somador1bit:scs:10:sc_internal:sc.b
+b[11] => Somador1bit:scs:11:sc_internal:sc.b
+b[12] => Somador1bit:scs:12:sc_internal:sc.b
+b[13] => Somador1bit:scs:13:sc_internal:sc.b
+b[14] => Somador1bit:scs:14:sc_internal:sc.b
+b[15] => Somador1bit:scs:15:sc_internal:sc.b
+b[16] => Somador1bit:scs:16:sc_internal:sc.b
+b[17] => Somador1bit:scs:17:sc_internal:sc.b
+b[18] => Somador1bit:scs:18:sc_internal:sc.b
+b[19] => Somador1bit:scs:19:sc_internal:sc.b
+b[20] => Somador1bit:scs:20:sc_internal:sc.b
+b[21] => Somador1bit:scs:21:sc_internal:sc.b
+b[22] => Somador1bit:scs:22:sc_internal:sc.b
+b[23] => Somador1bit:scs:23:sc_internal:sc.b
+b[24] => Somador1bit:scs:24:sc_internal:sc.b
+b[25] => Somador1bit:scs:25:sc_internal:sc.b
+b[26] => Somador1bit:scs:26:sc_internal:sc.b
+b[27] => Somador1bit:scs:27:sc_internal:sc.b
+b[28] => Somador1bit:scs:28:sc_internal:sc.b
+b[29] => Somador1bit:scs:29:sc_internal:sc.b
+b[30] => Somador1bit:scs:30:sc_internal:sc.b
+b[31] => Somador1bit:scs:31:sc_internal:sc.b
+s[0] <= Somador1bit:scs:0:sc_internal:sc.s
+s[1] <= Somador1bit:scs:1:sc_internal:sc.s
+s[2] <= Somador1bit:scs:2:sc_internal:sc.s
+s[3] <= Somador1bit:scs:3:sc_internal:sc.s
+s[4] <= Somador1bit:scs:4:sc_internal:sc.s
+s[5] <= Somador1bit:scs:5:sc_internal:sc.s
+s[6] <= Somador1bit:scs:6:sc_internal:sc.s
+s[7] <= Somador1bit:scs:7:sc_internal:sc.s
+s[8] <= Somador1bit:scs:8:sc_internal:sc.s
+s[9] <= Somador1bit:scs:9:sc_internal:sc.s
+s[10] <= Somador1bit:scs:10:sc_internal:sc.s
+s[11] <= Somador1bit:scs:11:sc_internal:sc.s
+s[12] <= Somador1bit:scs:12:sc_internal:sc.s
+s[13] <= Somador1bit:scs:13:sc_internal:sc.s
+s[14] <= Somador1bit:scs:14:sc_internal:sc.s
+s[15] <= Somador1bit:scs:15:sc_internal:sc.s
+s[16] <= Somador1bit:scs:16:sc_internal:sc.s
+s[17] <= Somador1bit:scs:17:sc_internal:sc.s
+s[18] <= Somador1bit:scs:18:sc_internal:sc.s
+s[19] <= Somador1bit:scs:19:sc_internal:sc.s
+s[20] <= Somador1bit:scs:20:sc_internal:sc.s
+s[21] <= Somador1bit:scs:21:sc_internal:sc.s
+s[22] <= Somador1bit:scs:22:sc_internal:sc.s
+s[23] <= Somador1bit:scs:23:sc_internal:sc.s
+s[24] <= Somador1bit:scs:24:sc_internal:sc.s
+s[25] <= Somador1bit:scs:25:sc_internal:sc.s
+s[26] <= Somador1bit:scs:26:sc_internal:sc.s
+s[27] <= Somador1bit:scs:27:sc_internal:sc.s
+s[28] <= Somador1bit:scs:28:sc_internal:sc.s
+s[29] <= Somador1bit:scs:29:sc_internal:sc.s
+s[30] <= Somador1bit:scs:30:sc_internal:sc.s
+s[31] <= Somador1bit:scs:31:sc_internal:sc.s
+s[32] <= <GND>
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:0:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:1:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:2:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:3:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:4:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:5:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:6:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:7:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:8:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:9:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:10:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:11:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:12:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:13:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:14:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:15:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:16:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:17:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:18:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:19:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:20:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:21:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:22:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:23:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:24:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:25:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:26:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:27:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:28:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:29:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:30:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|somadornbits:somador|Somador1bit:\scs:31:sc_internal:sc
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|subtratornbits:subtrator
+sub1[0] => Add0.IN64
+sub1[1] => Add0.IN63
+sub1[2] => Add0.IN62
+sub1[3] => Add0.IN61
+sub1[4] => Add0.IN60
+sub1[5] => Add0.IN59
+sub1[6] => Add0.IN58
+sub1[7] => Add0.IN57
+sub1[8] => Add0.IN56
+sub1[9] => Add0.IN55
+sub1[10] => Add0.IN54
+sub1[11] => Add0.IN53
+sub1[12] => Add0.IN52
+sub1[13] => Add0.IN51
+sub1[14] => Add0.IN50
+sub1[15] => Add0.IN49
+sub1[16] => Add0.IN48
+sub1[17] => Add0.IN47
+sub1[18] => Add0.IN46
+sub1[19] => Add0.IN45
+sub1[20] => Add0.IN44
+sub1[21] => Add0.IN43
+sub1[22] => Add0.IN42
+sub1[23] => Add0.IN41
+sub1[24] => Add0.IN40
+sub1[25] => Add0.IN39
+sub1[26] => Add0.IN38
+sub1[27] => Add0.IN37
+sub1[28] => Add0.IN36
+sub1[29] => Add0.IN35
+sub1[30] => Add0.IN34
+sub1[31] => Add0.IN33
+sub2[0] => Add0.IN32
+sub2[1] => Add0.IN31
+sub2[2] => Add0.IN30
+sub2[3] => Add0.IN29
+sub2[4] => Add0.IN28
+sub2[5] => Add0.IN27
+sub2[6] => Add0.IN26
+sub2[7] => Add0.IN25
+sub2[8] => Add0.IN24
+sub2[9] => Add0.IN23
+sub2[10] => Add0.IN22
+sub2[11] => Add0.IN21
+sub2[12] => Add0.IN20
+sub2[13] => Add0.IN19
+sub2[14] => Add0.IN18
+sub2[15] => Add0.IN17
+sub2[16] => Add0.IN16
+sub2[17] => Add0.IN15
+sub2[18] => Add0.IN14
+sub2[19] => Add0.IN13
+sub2[20] => Add0.IN12
+sub2[21] => Add0.IN11
+sub2[22] => Add0.IN10
+sub2[23] => Add0.IN9
+sub2[24] => Add0.IN8
+sub2[25] => Add0.IN7
+sub2[26] => Add0.IN6
+sub2[27] => Add0.IN5
+sub2[28] => Add0.IN4
+sub2[29] => Add0.IN3
+sub2[30] => Add0.IN2
+sub2[31] => Add0.IN1
+saida[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+saida[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|porta_and:porta_andi
+A => S.IN0
+B => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|porta_or:porta_ori
+A => S.IN0
+B => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
