@@ -12,6 +12,17 @@ port (
 end subtratornbits;
 
 architecture rtl of subtratornbits is
+
+--signal temp1, temp2: std_logic_vector(31 downto 0);
+
 begin
+
     saida <= signed(sub1) - signed(sub2);
+	 
+	 
+--	 if temp1(31) == '1' then
+--		saida <= temp1;-
+--	 else
+--		saida <= temp2;
+	 
 end rtl;
