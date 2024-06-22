@@ -1,20 +1,21 @@
 LIBRARY IEEE;
 USE IEEE.Std_Logic_1164.all;
-USE IEEE.std_logic_arith.all;
+--USE IEEE.std_logic_arith.all;
 USE IEEE.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
 
 entity ULA is 
 port(
 		-- Entradas
-		A: in std_logic_vector(31 downto 0); 
-		B: in std_logic_vector(31 downto 0);	
+		A: in std_logic_vector(3 downto 0); --(31 downto 0); 
+		B: in std_logic_vector(3 downto 0); --(31 downto 0);	
 		C: in std_logic_vector(2 downto 0);
 		logico_um, logico_dois : in std_logic;
 		
 		-- Saídas
-		Zero: out std_logic;
-		saida_som: out std_logic_vector(32 downto 0);
-		saida_sub: out signed(31 downto 0);
+		Zero: out std_logic := '0';
+		saida_som: out std_logic_vector(4 downto 0);--(32 downto 0);
+		saida_sub: out std_logic_vector(3 downto 0); --(31 downto 0);
 		saida_and, saida_or, saida_solt: out std_logic
 
 );
@@ -22,12 +23,12 @@ end entity;
 
 architecture arc of ULA is
 
-signal saida_somador: std_logic_vector(32 downto 0);
-signal saida_subtrador: signed(31 downto 0);
+signal saida_somador: std_logic_vector(4 downto 0);--(32 downto 0);
+signal saida_subtrator: std_logic_vector(3 downto 0); --(31 downto 0);
 signal saida_porta_and, saida_porta_or: std_logic;
 
 component somadornbits is
-generic(N: integer := 32);
+generic(N: integer := 4);
 		PORT (
 				cin : IN STD_LOGIC;
             a, b : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
@@ -36,7 +37,7 @@ generic(N: integer := 32);
 end component;
 
 component subtratornbits is
-generic(N: integer := 32);
+generic(N: integer := 4);
 		port(
 				sub1 : in std_logic_vector (N-1 downto 0);
 				sub2 : in std_logic_vector (N-1 downto 0);
@@ -59,7 +60,7 @@ component porta_or is
 end component;
 
 begin
-	
+
 	process(C)
 	begin
 		if (C = "000") then
@@ -69,7 +70,12 @@ begin
 		elsif (C = "010") then
 			saida_som <= saida_somador;
 		elsif (C = "110") then
-			saida_sub <= saida_subtrador;
+			saida_sub <= saida_subtrator;
+			if (saida_subtrator /= "0000") then
+				Zero <= '0';
+			else 
+				Zero <= '1';
+			end if;
 		elsif (C = "111") then
 			if (A < B) then
 				saida_solt <= '1';
@@ -88,7 +94,7 @@ somador: somadornbits port map(
 subtrator: subtratornbits port map(
 											  sub1 => A,
 											  sub2 => B,
-											  signed(saida) => saida_subtrador
+											  std_logic_vector(saida) => saida_subtrator
 											  );
 												
 porta_andi: porta_and port map(
