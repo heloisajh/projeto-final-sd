@@ -7,15 +7,15 @@ USE ieee.numeric_std.all;
 entity ULA is 
 port(
 		-- Entradas
-		A: in std_logic_vector(3 downto 0); --(31 downto 0); 
-		B: in std_logic_vector(3 downto 0); --(31 downto 0);	
+		A: in std_logic_vector(31 downto 0); 
+		B: in std_logic_vector(31 downto 0);	
 		C: in std_logic_vector(2 downto 0);
 		logico_um, logico_dois : in std_logic;
 		
 		-- Saídas
 		Zero: out std_logic := '0';
-		saida_som: out std_logic_vector(4 downto 0);--(32 downto 0);
-		saida_sub: out std_logic_vector(3 downto 0); --(31 downto 0);
+		saida_som: out std_logic_vector(32 downto 0);
+		saida_sub: out std_logic_vector(31 downto 0);
 		saida_and, saida_or, saida_solt: out std_logic
 
 );
@@ -23,12 +23,12 @@ end entity;
 
 architecture arc of ULA is
 
-signal saida_somador: std_logic_vector(4 downto 0);--(32 downto 0);
-signal saida_subtrator: std_logic_vector(3 downto 0); --(31 downto 0);
+signal saida_somador: std_logic_vector(32 downto 0);
+signal saida_subtrator: std_logic_vector(31 downto 0);
 signal saida_porta_and, saida_porta_or: std_logic;
 
 component somadornbits is
-generic(N: integer := 4);
+generic(N: integer := 32);
 		PORT (
 				cin : IN STD_LOGIC;
             a, b : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
@@ -37,7 +37,7 @@ generic(N: integer := 4);
 end component;
 
 component subtratornbits is
-generic(N: integer := 4);
+generic(N: integer := 32);
 		port(
 				sub1 : in std_logic_vector (N-1 downto 0);
 				sub2 : in std_logic_vector (N-1 downto 0);
