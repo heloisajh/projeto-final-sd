@@ -4,111 +4,87 @@ USE IEEE.Std_Logic_1164.all;
 USE IEEE.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
+-- Adicionar lógica do set on less then
+
 entity ULA is 
+generic(N: integer := 4);
 port(
 		-- Entradas
-		A: in std_logic_vector(31 downto 0); 
-		B: in std_logic_vector(31 downto 0);	
+		A: in std_logic_vector((N-1) downto 0); 
+		B: in std_logic_vector((N-1) downto 0);	
 		C: in std_logic_vector(2 downto 0);
-		logico_um, logico_dois : in std_logic;
+		--logico_um, logico_dois : in std_logic;
 		
 		-- Saídas
 		Zero: out std_logic := '0';
-		saida_som: out std_logic_vector(32 downto 0);
-		saida_sub: out std_logic_vector(31 downto 0);
-		saida_and, saida_or, saida_solt: out std_logic
+		S: out std_logic_vector((N-1) downto 0)
+		--saida_som: out std_logic_vector(32 downto 0);
+		--saida_sub: out std_logic_vector(31 downto 0)
+		--saida_and, saida_or, saida_solt: out std_logic
 
 );
 end entity;
 
 architecture arc of ULA is
 
-signal saida_somador: std_logic_vector(32 downto 0);
-signal saida_subtrator: std_logic_vector(31 downto 0);
-signal saida_porta_and, saida_porta_or: std_logic;
+signal saida_logica, saida_aritimetica: std_logic_vector((N-1) downto 0);
+signal ov: std_logic;
 
-component somadornbits is
-generic(N: integer := 32);
+component aritimetica is
+generic(N: integer := 4);
 		PORT (
-				cin : IN STD_LOGIC;
-            a, b : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
-            s : OUT STD_LOGIC_VECTOR (N DOWNTO 0)
+				c2: in std_logic;
+				A: in std_logic_vector((N-1) downto 0);
+				B: in std_logic_vector((N-1) downto 0);
+				S: out std_logic_vector((N-1) downto 0);
+				overflow: out std_logic;
+				Zero: out std_logic
 		);
 end component;
 
-component subtratornbits is
-generic(N: integer := 32);
-		port(
-				sub1 : in std_logic_vector (N-1 downto 0);
-				sub2 : in std_logic_vector (N-1 downto 0);
-				saida : out signed (N-1 downto 0)
-		);
-end component;
-
-component porta_and is
+component logica is
+generic(N: integer := 4);
 	port(
-			A, B: in std_logic;
-			S: out std_logic
+			c0: in std_logic;
+			A, B: in std_logic_vector((N-1) downto 0);
+			S: out std_logic_vector((N-1) downto 0)
 		  );
 end component;
 
-component porta_or is
+
+
+component mux2para1 is
+generic(N: integer := 4);
 	port(
-			A,B: in std_logic;
-			S: out std_logic
-		  );
+		   sel : IN STD_LOGIC;
+			a, b : IN STD_LOGIC_VECTOR (N - 1 DOWNTO 0);
+			y : OUT STD_LOGIC_VECTOR (N - 1 DOWNTO 0)
+	
+		  );		
 end component;
 
 begin
-
-	process(C)
-	begin
-		if (C = "000") then
-			saida_and <= saida_porta_and;
-		elsif (C = "001") then
-			saida_or <= saida_porta_or;
-		elsif (C = "010") then
-			saida_som <= saida_somador;
-		elsif (C = "110") then
-			saida_sub <= saida_subtrator;
-			if (saida_subtrator /= "0000") then
-				Zero <= '0';
-			else 
-				Zero <= '1';
-			end if;
-		elsif (C = "111") then
-			if (A < B) then
-				saida_solt <= '1';
-			else
-				saida_solt <= '0';
-			end if;
-		end if;
-	end process;
-somador: somadornbits port map(
-										 cin => '0',
-										 a => A,
-										 b => B,
-										 s => saida_somador
-										);
-										
-subtrator: subtratornbits port map(
-											  sub1 => A,
-											  sub2 => B,
-											  std_logic_vector(saida) => saida_subtrator
-											  );
-												
-porta_andi: porta_and port map(
-										A => logico_um,
-										B => logico_dois,
-										S => saida_porta_and
-										);
-
-porta_ori: porta_or port map(
-									 A => logico_um,
-									 B => logico_dois,
-									 S => saida_porta_or
-									 );
-									 
-
-
+  
+mux1: mux2para1 port map(
+								sel => C(1),
+								a => saida_logica,
+								b => saida_aritimetica,
+								y => S
+								 );
+								
+log: logica port map(
+							c0 => C(0),
+							A => A,
+							B => B,
+							S => saida_logica
+							);
+		
+ari: aritimetica port map(
+									c2 => C(2),
+									A => A,
+									B => B,
+									S => saida_aritimetica,
+									overflow => ov,
+									Zero => Zero);
+									
 end architecture;
