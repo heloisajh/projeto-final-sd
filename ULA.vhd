@@ -7,7 +7,7 @@ USE ieee.numeric_std.all;
 -- Adicionar lógica do set on less then
 
 entity ULA is 
-generic(N: integer := 4);
+generic(N: integer := 32);
 port(
 		-- Entradas
 		A: in std_logic_vector((N-1) downto 0); 
@@ -27,11 +27,11 @@ end entity;
 
 architecture arc of ULA is
 
-signal saida_logica, saida_aritimetica: std_logic_vector((N-1) downto 0);
-signal ov: std_logic;
+signal saida_logica, saida_aritimetica,saida_solt, saida_mux1: std_logic_vector((N-1) downto 0);
+signal ov, slt: std_logic;
 
 component aritimetica is
-generic(N: integer := 4);
+generic(N: integer := 32);
 		PORT (
 				c2: in std_logic;
 				A: in std_logic_vector((N-1) downto 0);
@@ -43,7 +43,7 @@ generic(N: integer := 4);
 end component;
 
 component logica is
-generic(N: integer := 4);
+generic(N: integer := 32);
 	port(
 			c0: in std_logic;
 			A, B: in std_logic_vector((N-1) downto 0);
@@ -54,7 +54,7 @@ end component;
 
 
 component mux2para1 is
-generic(N: integer := 4);
+generic(N: integer := 32);
 	port(
 		   sel : IN STD_LOGIC;
 			a, b : IN STD_LOGIC_VECTOR (N - 1 DOWNTO 0);
@@ -63,13 +63,38 @@ generic(N: integer := 4);
 		  );		
 end component;
 
+component SOLT is
+generic(N: integer := 32);
+	port(
+		  ov : IN STD_LOGIC;
+	     C: IN STD_LOGIC_VECTOR(2 downto 0);
+		  A,B : IN STD_LOGIC_VECTOR (N - 1 DOWNTO 0);
+	     saida_solt : OUT STD_LOGIC_VECTOR (N - 1 DOWNTO 0)
+		  );
+end component;
+
 begin
-  
+	process(C)
+	begin
+		if (C = "111") then
+			slt <= '1';
+		else
+			slt <= '0';
+		end if;
+	end process;
+			
 mux1: mux2para1 port map(
 								sel => C(1),
 								a => saida_logica,
 								b => saida_aritimetica,
-								y => S
+								y => saida_mux1
+								 );
+								 
+mux2: mux2para1 port map(
+								 sel => slt,
+								 a => saida_mux1,
+								 b => saida_solt,
+								 y => S
 								 );
 								
 log: logica port map(
@@ -86,5 +111,12 @@ ari: aritimetica port map(
 									S => saida_aritimetica,
 									overflow => ov,
 									Zero => Zero);
+									
+solti: SOLT port map(
+							ov => ov,
+							C => C,
+							A => A,
+							B => B,
+							saida_solt => saida_solt);
 									
 end architecture;

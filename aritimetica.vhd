@@ -21,7 +21,7 @@ signal saida_somador: std_logic_vector(N downto 0);
 signal saida_subtrator: std_logic_vector((N-1) downto 0);
 
 component somadornbits is
-generic(N: integer := 4);
+generic(N: integer := 32);
 		PORT (
 				cin : IN STD_LOGIC;
             a, b : IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
@@ -30,7 +30,7 @@ generic(N: integer := 4);
 end component;
 
 component subtratornbits is
-generic(N: integer := 4);
+generic(N: integer := 32);
 		port(
 				sub1 : in std_logic_vector ((N-1) downto 0);
 				sub2 : in std_logic_vector ((N-1) downto 0);

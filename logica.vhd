@@ -16,7 +16,7 @@ architecture log of logica is
 signal saida_porta_and, saida_porta_or: std_logic_vector((N-1) downto 0);
 
 component porta_and is
-generic(N: integer := 4);
+generic(N: integer := 32);
 	port(
 			A, B: in std_logic_vector((N-1) downto 0);
 			S: out std_logic_vector((N-1) downto 0)
@@ -24,7 +24,7 @@ generic(N: integer := 4);
 end component;
 
 component porta_or is
-generic(N: integer := 4);
+generic(N: integer := 32);
 	port(
 			A,B: in std_logic_vector((N-1) downto 0);
 			S: out std_logic_vector((N-1) downto 0)
