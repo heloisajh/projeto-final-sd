@@ -1,7 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 ENTITY SOLT IS
-GENERIC (N : INTEGER);
+GENERIC (N : INTEGER := 32);
 PORT (
 	ov : IN STD_LOGIC;
 	C: IN STD_LOGIC_VECTOR(2 downto 0);

@@ -15,29 +15,16 @@ port(
 		--logico_um, logico_dois : in std_logic;
 		
 		-- Saídas
-		Zero: out std_logic := '0';
+		Zero, error: out std_logic := '0';
 		S: out std_logic_vector((N-1) downto 0)
 );
 end entity;
 
 architecture bo of bloco_operativo is
 
-signal RegA, RegB, Resultado: std_logic_vector (N-1 downto 0);
+signal RegA, RegB, Resultado, resul_false: std_logic_vector (N-1 downto 0);
 signal RegC: std_logic_vector (2 downto 0);
-
-component ULA
-generic(N: integer := 32);
-port(
-		-- Entradas
-		A: in std_logic_vector((N-1) downto 0); 
-		B: in std_logic_vector((N-1) downto 0);	
-		C: in std_logic_vector(2 downto 0);
-		
-		-- Saídas
-		Zero: out std_logic := '0';
-		S: out std_logic_vector((N-1) downto 0)
-);
-end component;
+signal zero1, c_red: std_logic;
 
 component registrador 
 GENERIC (N: INTEGER := 32);
@@ -48,7 +35,26 @@ GENERIC (N: INTEGER := 32);
 	);
 end component;
 
+
+component Redundancia
+generic(N: integer := 32);
+	port(
+			-- entradas
+			A: in std_logic_vector((N-1) downto 0); 
+			B: in std_logic_vector((N-1) downto 0);	
+			C: in std_logic_vector(2 downto 0);
+			c_red: in std_logic;
+			
+			-- Saídas
+			Zero: out std_logic := '0';
+			S: out std_logic_vector((N-1) downto 0);
+			error: out std_logic
+	  );
+end component;
+
 begin
+
+--error <= error1 and error2;
 
 pA: registrador
 generic map(N => 32)
@@ -74,13 +80,15 @@ generic map(N => 3)
         D => C,
         Q => RegC);
 		  
-bloco_ULA: ULA
+redun: Redundancia
 	port map(
 		A => RegA,
 		B => RegB,
 		C => RegC,
-		Zero => Zero,
-		S => Resultado);
+		c_red => c_red,
+		zero => zero,
+		S => Resultado,
+		error => error);
 		
 pR: registrador
 generic map(N => 32)

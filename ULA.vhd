@@ -31,7 +31,7 @@ signal saida_logica, saida_aritimetica,saida_solt, saida_mux1: std_logic_vector(
 signal ov, slt: std_logic;
 
 component aritimetica is
-generic(N: integer := 32);
+generic(N: integer := N);
 		PORT (
 				c2: in std_logic;
 				A: in std_logic_vector((N-1) downto 0);
@@ -43,7 +43,7 @@ generic(N: integer := 32);
 end component;
 
 component logica is
-generic(N: integer := 32);
+generic(N: integer := N);
 	port(
 			c0: in std_logic;
 			A, B: in std_logic_vector((N-1) downto 0);
@@ -54,7 +54,7 @@ end component;
 
 
 component mux2para1 is
-generic(N: integer := 32);
+generic(N: integer := N);
 	port(
 		   sel : IN STD_LOGIC;
 			a, b : IN STD_LOGIC_VECTOR (N - 1 DOWNTO 0);
@@ -64,7 +64,7 @@ generic(N: integer := 32);
 end component;
 
 component SOLT is
-generic(N: integer := 32);
+generic(N: integer := N);
 	port(
 		  ov : IN STD_LOGIC;
 	     C: IN STD_LOGIC_VECTOR(2 downto 0);
@@ -83,28 +83,36 @@ begin
 		end if;
 	end process;
 			
-mux1: mux2para1 port map(
+mux1: mux2para1 
+generic map(N => N)
+port map(
 								sel => C(1),
 								a => saida_logica,
 								b => saida_aritimetica,
 								y => saida_mux1
 								 );
 								 
-mux2: mux2para1 port map(
+mux2: mux2para1
+generic map(N => N)
+port map(
 								 sel => slt,
 								 a => saida_mux1,
 								 b => saida_solt,
 								 y => S
 								 );
 								
-log: logica port map(
+log: logica 
+generic map(N => N)
+port map(
 							c0 => C(0),
 							A => A,
 							B => B,
 							S => saida_logica
 							);
 		
-ari: aritimetica port map(
+ari: aritimetica 
+generic map(N => N)
+port map(
 									c2 => C(2),
 									A => A,
 									B => B,
@@ -112,7 +120,9 @@ ari: aritimetica port map(
 									overflow => ov,
 									Zero => Zero);
 									
-solti: SOLT port map(
+solti: SOLT
+generic map(N => N)
+port map(
 							ov => ov,
 							C => C,
 							A => A,
