@@ -1,8 +1,7 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-use ieee.math_real.all;
-use ieee.numeric_std.all;
-use IEEE.std_logic_textio.all;
+LIBRARY IEEE;
+USE IEEE.Std_Logic_1164.all;
+USE IEEE.std_logic_unsigned.all;
+USE ieee.numeric_std.all;
 use std.textio.all;
 
 entity testbench is
@@ -10,24 +9,24 @@ end testbench;
 
 architecture tb of testbench is
 
-    constant B: integer := 8; -- Número de bits por amostra
-
-    signal clk : std_logic := '0';
-    signal enable : std_logic := '0';
-    signal reset : std_logic := '0';
-    signal sample_ori : std_logic_vector(B*4-1 downto 0) := (others => '0');
-    signal sample_can : std_logic_vector(B*4-1 downto 0) := (others => '0');
-    signal read_mem : std_logic := '0';
-    signal address : std_logic_vector((integer(log2(real(16))))-1 downto 0) := (others => '0');
-    signal sad_value : std_logic_vector((B+integer(log2(real(64))))-1 downto 0) := (others => '0');
-    signal done : std_logic := '0';
-    signal finished : std_logic := '0';
-
-    constant passo : TIME := 20 ns; 
+    constant N: integer := 32;
+		
+	 signal clk: std_logic := '0';
+	 signal iniciar: std_logic := '0';
+	 signal reset: std_logic := '0';
+	 signal A: std_logic_vector(N - 1 downto 0):= (others => '0');
+	 signal B: std_logic_vector(N - 1 downto 0):= (others => '0');
+	 signal C: std_logic_vector(2 downto 0):= (others => '0');
+	 signal Zero: std_logic := '0';
+	 signal erro: std_logic := '0';
+	 signal S: std_logic_vector(N-1 downto 0):= (others => '0');
+	 signal pronto: std_logic := '0';
+	 signal finished: std_logic := '0';
+	 
+	 constant passo : TIME := 20 ns;
 
 begin
 
-    -- Clock generation process
     clk_process : process
     begin
         while finished /= '1' loop
@@ -39,77 +38,77 @@ begin
         clk <= '0';
     end process;
 
-    -- Connect DUV
-    DUV: entity work.sad
+
+    DUV: entity work.ula_mips
         port map(
-            clk => clk,
-            enable => enable,
-            reset => reset,
-            sample_ori => sample_ori,
-            sample_can => sample_can,
-            read_mem => read_mem,
-            address => address,
-            sad_value => sad_value,
-            done => done
+				clk => clk,
+				iniciar => iniciar,
+				reset => reset,
+            A => A,
+            B => B,
+            C => C,
+				S => S,
+            Zero => Zero,
+				erro => erro,
+				pronto => pronto
         );
 
-    -- Stimulus process
    stim: process
     file arquivo_de_estimulos : text open read_mode is "../../estimulos.dat";
     variable linha_de_estimulos: line;
     variable espaco: character;
-    variable valor_de_entrada_1: bit_vector(B*4-1 downto 0);
-    variable valor_de_entrada_2: bit_vector(B*4-1 downto 0);
-    variable valor_de_saida: bit_vector((B+integer(log2(real(64))))-1 downto 0);
-    variable last_address: std_logic_vector((integer(log2(real(16))))-1 downto 0) := (others => '1');
-    variable stimuli_counter: natural range 0 to 15 := 0;  -- Inicializa o contador de estímulos
+    variable valor_de_entrada_1: bit_vector(N-1 downto 0);
+    variable valor_de_entrada_2: bit_vector(N-1 downto 0);
+	 variable valor_de_entrada_3: bit_vector(2 downto 0);
+    variable valor_de_saida_1: bit_vector(N-1 downto 0);
+	 variable valor_de_saida_2: bit;
+	 variable valor_de_saida_3: bit;
+
 begin
-    -- Initial reset
-    reset <= '1';
+
+	 reset <= '1';
     wait for passo;
     reset <= '0';
-    enable <= '1';
+    iniciar <= '1';
 
-    -- Read stimulus from file
     while not endfile(arquivo_de_estimulos) loop
-        -- Verifica se o endereço mudou desde a última iteração
-        if address /= last_address then
-            -- Reinicia o contador de estímulos e lê um novo estímulo
-            stimuli_counter := 0;
-            last_address := address;
-
+	 
             readline(arquivo_de_estimulos, linha_de_estimulos);
             read(linha_de_estimulos, valor_de_entrada_1);
-            sample_ori <= to_stdlogicvector(valor_de_entrada_1);
+            A <= to_stdlogicvector(valor_de_entrada_1);
             read(linha_de_estimulos, espaco);
             read(linha_de_estimulos, valor_de_entrada_2);
-            sample_can <= to_stdlogicvector(valor_de_entrada_2);
+            B <= to_stdlogicvector(valor_de_entrada_2);
             read(linha_de_estimulos, espaco);
-            read(linha_de_estimulos, valor_de_saida);
-        end if;
-
-        -- Espera pelo sinal de clock
-        wait until rising_edge(clk);
-
-        -- Incrementa o contador de estímulos
-        stimuli_counter := stimuli_counter + 1;
-
-        -- Verifica se todos os estímulos para o endereço atual foram lidos
-        if stimuli_counter = 16 then
-            -- Espera pelo sinal done para verificar o resultado
-            wait until done = '1';
-
-            -- Verifica o valor de saída
-            wait for passo;
-            assert (sad_value = to_stdlogicvector(valor_de_saida))
-                report "Falha na simulação."
+				read(linha_de_estimulos, valor_de_entrada_3);
+				C <= to_stdlogicvector(valor_de_entrada_3);
+				read(linha_de_estimulos, espaco);
+            read(linha_de_estimulos, valor_de_saida_1);
+				read(linha_de_estimulos, espaco);
+				read(linha_de_estimulos, valor_de_saida_2);
+				read(linha_de_estimulos, espaco);
+				read(linha_de_estimulos, valor_de_saida_3);
+				
+				wait until rising_edge(clk);
+				wait until pronto = '1';
+				wait for passo;
+				
+            assert (S = to_stdlogicvector(valor_de_saida_1))
+				    report "Falha na simulação: S errado."
                 severity error;
-        end if;
+					 
+				assert (Zero = to_stdulogic(valor_de_saida_2))
+                report "Falha na simulação: Zero errado."
+                severity error;
+					 
+            if erro = '1' then
+                report "Falha na simulação: 'Erro' sinalizado."
+                severity error;
+            end if;
     end loop;
-
-    -- Espera um ciclo de clock antes de finalizar o teste
-    wait until rising_edge(clk);
-    finished <= '1';
+	 
+	 wait until rising_edge(clk);
+	 finished <= '1';
     assert false report "Teste concluído."
         severity note;
     wait;
