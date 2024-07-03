@@ -1,35 +1,34 @@
 import random
 
-def calculo_ula(c_ula, operando_a, operando_b):
+def calculo_ula(c_ula, operando_a, operando_b, bit_width):
+    max_val = 2 ** bit_width
+    mask = max_val - 1
+    zero = 0
+
     if c_ula == '0':  # AND
         ula_value = operando_a & operando_b
-        zero = 0
-        return {'resultado': ula_value, 'sinal_zero': zero}
+        print(operando_a)
+        print(operando_b)
+        print(ula_value)
+
     elif c_ula == '1':  # OR
         ula_value = operando_a | operando_b
-        zero = 0
-        return {'resultado': ula_value, 'sinal_zero': zero}
+
     elif c_ula == '2':  # SOMA
-        ula_value = operando_a + operando_b
-        zero = 0
-        return {'resultado': ula_value, 'sinal_zero': zero}
+        ula_value = (operando_a + operando_b) & mask
+
     elif c_ula == '6':  # SUBTRAÇÃO
-        ula_value = operando_a - operando_b
+        ula_value = (operando_a - operando_b) & mask
         if ula_value == 0:
             zero = 1
-        else:
-            zero = 0
-        return {'resultado': ula_value, 'sinal_zero': zero}
+
     elif c_ula == '7':  # SET ON LESS THAN
-        if operando_a < operando_b:
-            ula_value = 1
-            zero = 0
-        else:
-            ula_value = 0
-            zero = 1
-        return {'resultado': ula_value, 'sinal_zero': zero}
+        ula_value = 1 if operando_a < operando_b else 0
     else:
-        return {'resultado': 0, 'sinal_zero': 1}  # Valor padrão
+        ula_value = 0
+
+    return {'resultado': ula_value, 'sinal_zero': zero}
+
 
 def gerar_estimulos(filename, n_valores=16, c_ula_width=3, bit_width=32, result_width=32):
     with open(filename, 'w') as f:

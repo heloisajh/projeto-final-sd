@@ -17,8 +17,6 @@ def calculo_ula(c_ula, operando_a, operando_b, bit_width):
 
     elif c_ula == '2':  # SOMA
         ula_value = (operando_a + operando_b) & mask
-        if ula_value == 0:
-            zero = 1
 
     elif c_ula == '6':  # SUBTRAÇÃO
         ula_value = (operando_a - operando_b) & mask
